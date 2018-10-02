@@ -12,16 +12,15 @@
 				"Tags" : [ {"Key" : "Name", "Value" : "myVPC"} ]
 			 }
 		},
-	"publicSubnet": {
-			 "mySubnet" : {
-				 "Type" : "AWS::EC2::Subnet",
-				 "Properties" : {
-					"VpcId" : { "Ref" : "myVPC" },
-					"CidrBlock" : "10.0.0.0/24",
-					"Tags" : [ { "Key" : "Name", "Value" : "PublicSubnet1" } ]
-				 }
-			  }
-		}	
+	"publicSubnet" : {
+			"Type" : "AWS::EC2::Subnet",
+			"Properties" : {
+			"VpcId" : { "Ref" : "myVPC" },
+			"CidrBlock" : "10.0.0.0/24",
+			"Tags" : [ { "Key" : "Name", "Value" : "PublicSubnet1" } ]
+		}
+	}
+			
 },
 "Outputs":{}
 }
