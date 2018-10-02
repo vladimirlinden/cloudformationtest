@@ -11,7 +11,7 @@
 				"InstanceTenancy" : "default",
 				"Tags" : [ {"Key" : "Name", "Value" : "myVPC"} ]
 			 }
-		}
+		},
 	"publicSubnet": {
 			 "mySubnet" : {
 				 "Type" : "AWS::EC2::Subnet",
